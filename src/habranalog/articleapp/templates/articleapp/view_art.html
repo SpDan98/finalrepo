@@ -1,0 +1,11 @@
+{% extends 'mainapp/base.html' %}
+{% block content %}
+
+<h2>{{ article.title }}</h2>
+{% for i in blocks %}
+<h3>{{ i.title }}</h3>
+{% endfor %}
+
+<h2> {{ viewscount }}</h2>
+
+{% endblock %}
